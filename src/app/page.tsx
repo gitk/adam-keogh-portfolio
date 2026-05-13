@@ -256,12 +256,17 @@ export default function AdamPortfolioWebsite() {
             <Card className="overflow-hidden rounded-[2rem] border-white/10 bg-white/[0.04]">
               <CardContent className="p-0">
                 <div className="aspect-video bg-gradient-to-br from-red-600/30 via-zinc-900 to-black p-6">
-                  <div className="flex h-full items-center justify-center rounded-3xl border border-white/10 bg-black/30">
-                    <div className="text-center">
-                      <Video className="mx-auto h-12 w-12 text-red-400" />
-                      <p className="mt-3 text-sm text-zinc-400">Embed fairground ride video here</p>
-                    </div>
-                  </div>
+                  <div className="aspect-video overflow-hidden rounded-3xl border border-white/10 bg-black">
+  <video
+    className="h-full w-full object-cover"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source src="/videos/engineering_project.mp4" type="video/mp4" />
+  </video>
+</div>
                 </div>
                 <div className="p-7">
                   <h3 className="text-2xl font-black">Motorised Fairground Ride</h3>
