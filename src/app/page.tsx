@@ -306,11 +306,26 @@ export default function AdamPortfolioWebsite() {
                   <p className="mt-3 text-zinc-300">
                     One of Adam’s earliest engineering builds, made from an orange juice carton, large Lego car wheels, wooden skewa small electric motor and an elastic band.
                   </p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {['OJ carton', 'Lego wheels', 'Electric motor', 'Elastic band', 'Wood skewers'].map((item) => (
-                      <span key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-zinc-300">{item}</span>
-                    ))}
-                  </div>
+                 <div className="mt-5 flex flex-wrap gap-2">
+  {['OJ carton', 'Lego wheels', 'Electric motor', 'Elastic band', 'Wood skewers'].map((item) => (
+    <span
+      key={item}
+      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-zinc-300"
+    >
+      {item}
+    </span>
+  ))}
+</div>
+
+<div className="mt-6">
+  <a
+    href="/projects/f1-build"
+    className="inline-flex items-center gap-2 rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-500"
+  >
+    <Video className="h-4 w-4" />
+    View Project Gallery
+  </a>
+</div>
                 </div>
               </CardContent>
             </Card>
