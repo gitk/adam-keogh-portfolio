@@ -131,7 +131,7 @@ function TelemetryBackground() {
   );
 }
 
-function SectionLabel({ children }) {
+function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-red-300">
       <Zap className="h-3.5 w-3.5" />
@@ -140,7 +140,7 @@ function SectionLabel({ children }) {
   );
 }
 
-function Stat({ value, label }) {
+function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
       <div className="text-2xl font-black text-white">{value}</div>
