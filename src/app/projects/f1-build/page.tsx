@@ -37,7 +37,7 @@ export default function F1BuildPage() {
         {/* Main Feature Image */}
         <div className="overflow-hidden rounded-[2rem] border border-white/10">
           <img
-            src="/images/cardboardcar5.jpg"
+            src="/images/cardboardcar5.jpeg"
             alt="My Homemade F1 Car"
             className="w-full object-cover"
           />
