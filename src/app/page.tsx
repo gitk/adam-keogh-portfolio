@@ -283,14 +283,60 @@ export default function AdamPortfolioWebsite() {
 
             <Card className="overflow-hidden rounded-[2rem] border-white/10 bg-white/[0.04]">
               <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-blue-600/20 via-zinc-900 to-black p-6">
-                  <div className="flex h-full items-center justify-center rounded-3xl border border-white/10 bg-black/30">
-                    <div className="text-center">
-                      <Car className="mx-auto h-12 w-12 text-blue-300" />
-                      <p className="mt-3 text-sm text-zinc-400">Add photos/video of homemade F1 car</p>
-                    </div>
-                  </div>
-                </div>
+<div className="bg-gradient-to-br from-blue-600/20 via-zinc-900 to-black p-4">
+  <div className="grid grid-cols-3 grid-rows-2 gap-3 overflow-hidden rounded-3xl border border-white/10 bg-black/40 p-3">
+
+    {/* Main Feature Image */}
+    <div className="col-span-2 row-span-2 overflow-hidden rounded-2xl">
+      <img
+        src="/images/cardboardcar2.jpeg"
+        alt="Homemade F1 car build"
+        className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+      />
+    </div>
+
+    {/* Top Right */}
+    <div className="overflow-hidden rounded-2xl">
+      <img
+        src="/images/cardboardcar1.jpeg"
+        alt="F1 car side view"
+        className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+      />
+    </div>
+
+    {/* Bottom Right */}
+    <div className="overflow-hidden rounded-2xl">
+      <img
+        src="/images/cardboardcar3.jpeg"
+        alt="F1 car detail"
+        className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+      />
+    </div>
+  </div>
+
+  {/* Portrait Video */}
+  <div className="mt-4 overflow-hidden rounded-3xl border border-white/10 bg-black">
+    <video
+      className="h-[520px] w-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+    >
+      <source src="/images/cardboardcar5.mov" type="video/quicktime" />
+    </video>
+  </div>
+
+  {/* Extra Image */}
+  <div className="mt-4 overflow-hidden rounded-3xl border border-white/10">
+    <img
+      src="/images/cardboardcar4.jpeg"
+      alt="F1 car engineering build"
+      className="w-full object-cover transition-transform duration-700 hover:scale-105"
+    />
+  </div>
+</div>
                 <div className="p-7">
                   <h3 className="text-2xl font-black">Homemade F1 Car Build</h3>
                   <p className="mt-3 text-zinc-300">
