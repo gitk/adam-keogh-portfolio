@@ -342,6 +342,29 @@ export default function AdamPortfolioWebsite() {
                         <h3 className="text-xl font-black">{cba.title}</h3>
                         <p className="mt-1 font-semibold text-red-300">{cba.subtitle}</p>
                         <p className="mt-4 text-sm leading-6 text-zinc-400">{cba.description}</p>
+                        <div className="mt-5">
+  <a
+    href={
+      cba.title === "Science CBA"
+        ? "/pdfs/science-cba.pdf"
+        : cba.title === "Maths CBA"
+        ? "/pdfs/maths-cba.pdf"
+        : cba.title === "History CBA"
+        ? "/pdfs/history-cba.pdf"
+        : cba.title === "Art CBA"
+        ? "/pdfs/art-cba.pdf"
+        : cba.title === "English CBA"
+        ? "/pdfs/english-cba.pdf"
+        : "/pdfs/pe-cba.pdf"
+    }
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-2 text-sm font-medium text-red-200 transition hover:bg-red-500/20"
+  >
+    <FileText className="h-4 w-4" />
+    View PDF
+  </a>
+</div>
                       </CardContent>
                     </Card>
                   </motion.div>
