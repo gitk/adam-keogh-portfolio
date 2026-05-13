@@ -286,7 +286,7 @@ export default function AdamPortfolioWebsite() {
 <div className="aspect-video bg-gradient-to-br from-blue-600/20 via-zinc-900 to-black p-6">
   <div className="relative h-full overflow-hidden rounded-3xl border border-white/10 bg-black">
     <img
-      src="/images/cardboardcar2.jpeg"
+      src="/images/cardboardcar5.jpeg"
       alt="Homemade F1 car build"
       className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
     />

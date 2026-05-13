@@ -42,6 +42,17 @@ export default function F1BuildPage() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
 
+            <motion.div
+  whileHover={{ scale: 1.02 }}
+  className="overflow-hidden rounded-[2rem] border border-white/10"
+>
+  <img
+    src="/images/cardboardcar5.jpg"
+    alt="Additional F1 build view"
+    className="w-full object-cover"
+  />
+</motion.div>
+
           <motion.div
             whileHover={{ scale: 1.02 }}
             className="overflow-hidden rounded-[2rem] border border-white/10"
