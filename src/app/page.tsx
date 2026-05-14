@@ -294,7 +294,7 @@ export default function AdamPortfolioWebsite() {
                 <div className="p-7">
                   <h3 className="text-2xl font-black text-white">Motorised Fairground Ride</h3>
                   <p className="mt-3 text-zinc-300">
-                    A working engineering model showing motion, structure and mechanical thinking.                  </p>
+                    A working engineering model showing motion, structure and mechanical thinking.</p>
                   <div className="mt-5 grid grid-cols-2 gap-3 text-sm text-zinc-400">
                     <div className="rounded-2xl bg-white/5 p-4"><Wrench className="mb-2 h-5 w-5 text-red-400" />Mechanism</div>
                     <div className="rounded-2xl bg-white/5 p-4"><Cpu className="mb-2 h-5 w-5 text-red-400" />Motorised movement</div>
@@ -370,7 +370,7 @@ export default function AdamPortfolioWebsite() {
                   <motion.div key={cba.title} whileHover={{ y: -6 }} transition={{ type: "spring", stiffness: 260, damping: 20 }}>
                     <Card className="h-full overflow-hidden rounded-[1.6rem] border-white/10 bg-zinc-950/70 transition hover:border-red-500/40">
 
-  <div className="relative aspect-video overflow-hidden">
+  <div className="relative h-44 overflow-hidden">
     <img
       src={cba.thumbnail}
       alt={cba.title}
