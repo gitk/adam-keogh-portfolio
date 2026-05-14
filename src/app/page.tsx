@@ -353,7 +353,7 @@ export default function AdamPortfolioWebsite() {
     <div className="absolute bottom-4 left-4 right-4">
       <div className="inline-flex items-center gap-2 rounded-full bg-black/50 px-3 py-1 text-xs text-zinc-200 backdrop-blur">
         <Video className="h-3 w-3" />
-        Photos + Build Video
+        Photos + Testing Video
       </div>
     </div>
   </div>
