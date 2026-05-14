@@ -244,7 +244,7 @@ export default function AdamPortfolioWebsite() {
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-xl shadow-red-600/25">
                       <Play className="ml-1 h-7 w-7 text-white" />
                     </div>
-                    <h2 className="text-3xl font-black">Motorised Fairground Ride</h2>
+                    <h2 className="text-3xl font-black text-white">Motorised Fairground Ride</h2>
                     <p className="mt-3 text-sm leading-6 text-zinc-300">
                       My latest engineering project, showing the build process, movement, mechanism and design thinking behind the model.
                     </p>
@@ -288,8 +288,7 @@ export default function AdamPortfolioWebsite() {
                 <div className="p-7">
                   <h3 className="text-2xl font-black text-white">Motorised Fairground Ride</h3>
                   <p className="mt-3 text-zinc-300">
-                    A working engineering model showing motion, structure and mechanical thinking. This project should be the main video-led feature of the portfolio.
-                  </p>
+                    A working engineering model showing motion, structure and mechanical thinking.                  </p>
                   <div className="mt-5 grid grid-cols-2 gap-3 text-sm text-zinc-400">
                     <div className="rounded-2xl bg-white/5 p-4"><Wrench className="mb-2 h-5 w-5 text-red-400" />Mechanism</div>
                     <div className="rounded-2xl bg-white/5 p-4"><Cpu className="mb-2 h-5 w-5 text-red-400" />Motorised movement</div>
@@ -355,7 +354,7 @@ export default function AdamPortfolioWebsite() {
             <div className="mb-10 max-w-3xl">
               <h2 className="text-4xl font-black tracking-tight md:text-5xl">School projects with a clear engineering thread.</h2>
               <p className="mt-4 text-lg leading-8 text-zinc-400">
-                Adam’s CBAs are presented as evidence of curiosity, research, testing, making and communication, with Formula 1 and engineering running through the strongest pieces.
+                My CBAs are presented as evidence of curiosity, research, testing, making and communication, with Formula 1 and engineering running through the strongest pieces.
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
