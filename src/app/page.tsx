@@ -81,13 +81,14 @@ const skills = [
   "Engineering curiosity",
   "Physical prototyping",
   "Problem solving",
-  "Aerodynamics",
+  "Engineering design",
   "Data analysis",
   "Presentation design",
   "Motorsport knowledge",
   "Teamwork",
   "Creative making",
   "Video documentation",
+  "Hands-on projects",
 ];
 
 const timeline = [
@@ -189,7 +190,7 @@ export default function AdamPortfolioWebsite() {
               TY Engineering Placement Portfolio
             </div>
             <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
-              Future Engineer. <span className="text-red-500">F1 Fan.</span> Builder.
+              Future Engineer. <span className="text-red-500">F1 Fan.</span> Problem Solver.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
               I’m Adam Keogh, a student interested in engineering, motorsport and how things work. This portfolio brings together my F1-inspired CBAs, hands-on builds, experiments, videos and project work for Transition Year placement opportunities.
@@ -304,7 +305,7 @@ export default function AdamPortfolioWebsite() {
                 <div className="p-7">
                   <h3 className="text-2xl font-black text-white">Homemade F1 Car Build</h3>
                   <p className="mt-3 text-zinc-300">
-                    One of my earliest engineering builds, made from an orange juice carton, large Lego car wheels, wooden skewa small electric motor and an elastic band.
+                    One of my earliest engineering builds, made from an orange juice carton, large Lego car wheels, wooden skewers, a small electric motor and an elastic band.
                   </p>
                  <div className="mt-5 flex flex-wrap gap-2">
   {['OJ carton', 'Lego wheels', 'Electric motor', 'Elastic band', 'Wood skewers'].map((item) => (
