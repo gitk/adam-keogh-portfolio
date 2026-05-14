@@ -99,7 +99,7 @@ const skills = [
 const timeline = [
   {
     year: "6th Class",
-    title: "Homemade F1 Car Build",
+    title: "Motorised F1 Car Build",
     text: "Built from an orange juice carton, large Lego wheels, a small electric motor and an elastic band.",
   },
   {
@@ -344,7 +344,7 @@ export default function AdamPortfolioWebsite() {
   <div className="relative h-full overflow-hidden rounded-3xl border border-white/10 bg-black">
     <img
       src="/images/cardboardcar5.jpeg"
-      alt="Homemade F1 car build"
+      alt="Motorised F1 car build"
       className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
     />
 
@@ -359,7 +359,7 @@ export default function AdamPortfolioWebsite() {
   </div>
 </div>
                 <div className="p-7">
-                  <h3 className="text-2xl font-black text-white">Homemade F1 Car Build</h3>
+                  <h3 className="text-2xl font-black text-white">Motorised F1 Car Build</h3>
                   <p className="mt-3 text-zinc-300">
                     One of my earliest engineering builds, made from an orange juice carton, large Lego car wheels, wooden skewers, a small electric motor and an elastic band.
                   </p>
