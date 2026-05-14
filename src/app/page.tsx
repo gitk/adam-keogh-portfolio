@@ -33,6 +33,7 @@ const cbas = [
       "A homemade wind tunnel experiment testing how airflow behaves around different shapes, using tissue paper and a cotton ball to observe turbulence and air movement.",
     tag: "Wind Tunnel Testing",
     icon: Wind,
+    thumbnail: "/pdfs/science_thmb.jpg",
   },
   {
     title: "Maths CBA",
@@ -41,6 +42,7 @@ const cbas = [
       "An analysis of how Silverstone's circuit layout and F1 fuel load affect lap times, using real racing data, calculations, comparisons and estimated time loss.",
     tag: "Data & Lap Time Analysis",
     icon: Gauge,
+    thumbnail: "/pdfs/maths_thmb.jpg",
   },
   {
     title: "History CBA",
@@ -49,6 +51,7 @@ const cbas = [
       "A research project exploring Eddie Jordan's early life, Jordan Grand Prix and his impact on Irish motorsport and Formula 1 history.",
     tag: "Motorsport History",
     icon: Trophy,
+    thumbnail: "/pdfs/history_thmb.jpg",
   },
   {
     title: "Art CBA",
@@ -57,6 +60,7 @@ const cbas = [
       "A hands-on character creation project inspired by Charles Leclerc, using cardboard, paper, paint and sculptural problem solving.",
     tag: "Creative Making",
     icon: Lightbulb,
+    thumbnail: "/pdfs/art_thmb.jpg",
   },
   {
     title: "English CBA",
@@ -65,6 +69,7 @@ const cbas = [
       "A personal presentation about travelling to Silverstone, camping at the Grand Prix, seeing Formula 1 up close and being inspired by the race weekend.",
     tag: "Storytelling",
     icon: FileText,
+    thumbnail: "/pdfs/english_thmb.jpg",
   },
   {
     title: "PE CBA",
@@ -73,6 +78,7 @@ const cbas = [
       "A personal fitness project tracking activity, strength, routine, challenges, progress and confidence through a structured programme.",
     tag: "Discipline & Fitness",
     icon: Dumbbell,
+    thumbnail: "/pdfs/pe_thmb.jpg",
   },
 ];
 
@@ -362,8 +368,21 @@ export default function AdamPortfolioWebsite() {
                 const Icon = cba.icon;
                 return (
                   <motion.div key={cba.title} whileHover={{ y: -6 }} transition={{ type: "spring", stiffness: 260, damping: 20 }}>
-                    <Card className="h-full rounded-[1.6rem] border-white/10 bg-zinc-950/70 hover:border-red-500/40">
-                      <CardContent className="p-6">
+                    <Card className="h-full overflow-hidden rounded-[1.6rem] border-white/10 bg-zinc-950/70 transition hover:border-red-500/40">
+
+  <div className="relative aspect-video overflow-hidden">
+    <img
+      src={cba.thumbnail}
+      alt={cba.title}
+      className="h-full w-full object-cover transition duration-700 hover:scale-105"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+
+    <div className="absolute inset-0 bg-black/20" />
+  </div>
+
+  <CardContent className="p-6">
                         <div className="mb-5 flex items-center justify-between">
                           <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-red-300">
                             <Icon className="h-6 w-6" />
