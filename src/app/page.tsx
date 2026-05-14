@@ -193,7 +193,7 @@ export default function AdamPortfolioWebsite() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
               I’m Adam Keogh, a student interested in engineering, motorsport and how things work. This portfolio brings together my F1-inspired CBAs, hands-on builds, experiments, videos and project work for Transition Year placement opportunities.
-            </p>a
+            </p>
 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
   <Button
@@ -419,7 +419,7 @@ export default function AdamPortfolioWebsite() {
 
         <section id="about" className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <SectionLabel>About Adam</SectionLabel>
+            <SectionLabel>About Me</SectionLabel>
             <h2 className="text-4xl font-black tracking-tight md:text-5xl">Driven by engineering, motorsport and teamwork.</h2>
             <p className="mt-5 text-lg leading-8 text-zinc-400">
   I am interested in engineering and Formula 1. I enjoy learning about engineering in school and understanding the technology and design behind Formula 1 cars. Outside school, I play football for Longwood AFC, regularly go to the gym, enjoy gaming and spend time racing on my Formula 1 simulator. These interests have helped me develop focus, commitment, consistency and teamwork both inside and outside the classroom.
