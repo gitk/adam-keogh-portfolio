@@ -241,32 +241,67 @@ export default function AdamPortfolioWebsite() {
             <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-red-600/30 to-blue-600/10 blur-2xl" />
             <Card className="relative overflow-hidden rounded-[2rem] border-white/10 bg-zinc-950/70 shadow-2xl shadow-black/50 backdrop-blur">
               <CardContent className="p-0">
-                <div className="relative aspect-[4/5] overflow-hidden bg-[radial-gradient(circle_at_top,rgba(239,68,68,0.25),transparent_35%),linear-gradient(135deg,#111827,#050505)]">
-                  <div className="absolute inset-6 rounded-[1.5rem] border border-white/10" />
-                  <div className="absolute left-8 top-8 rounded-full bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-zinc-300">
-                    Featured Build
-                  </div>
-                  <div className="absolute inset-x-8 bottom-8">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-xl shadow-red-600/25">
-                      <Play className="ml-1 h-7 w-7 text-white" />
-                    </div>
-                    <h2 className="text-3xl font-black text-white">Motorised Fairground Ride</h2>
-                    <p className="mt-3 text-sm leading-6 text-zinc-300">
-                      My latest engineering project, showing the build process, movement, mechanism and design thinking behind the model.
-                    </p>
-                  </div>
-                  <motion.div
-                    className="absolute right-8 top-28 h-52 w-52 rounded-full border border-red-400/30"
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-                  >
-                    <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 rounded-full bg-red-500" />
-                    <div className="absolute bottom-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-white" />
-                    <div className="absolute left-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-white" />
-                    <div className="absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-white" />
-                  </motion.div>
-                </div>
-              </CardContent>
+  <div className="relative aspect-[4/5] overflow-hidden bg-black">
+
+    <video
+      className="absolute inset-0 h-full w-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source src="/videos/engineering_project.mp4" type="video/mp4" />
+    </video>
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
+
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(239,68,68,0.18),transparent_40%)]" />
+
+    <div className="absolute inset-6 rounded-[1.5rem] border border-white/10" />
+
+    <div className="absolute left-8 top-8 rounded-full bg-black/50 backdrop-blur px-4 py-2 text-xs uppercase tracking-[0.2em] text-zinc-200 border border-white/10">
+      Featured Build
+    </div>
+
+    <div className="absolute inset-x-8 bottom-8">
+      <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-xl shadow-red-600/25">
+        <Play className="ml-1 h-7 w-7 text-white" />
+      </div>
+
+      <h2 className="text-3xl font-black text-white">
+        Motorised Fairground Ride
+      </h2>
+
+      <p className="mt-3 max-w-md text-sm leading-6 text-zinc-200">
+        My latest engineering project, showing the build process,
+        movement, mechanism and design thinking behind the model.
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {["Engineering", "Mechanics", "Motorised Build"].map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs text-zinc-200 backdrop-blur"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <motion.div
+      className="absolute right-8 top-28 h-52 w-52 rounded-full border border-red-400/20"
+      animate={{ rotate: 360 }}
+      transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+    >
+      <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 rounded-full bg-red-500" />
+      <div className="absolute bottom-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-white" />
+      <div className="absolute left-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-white" />
+      <div className="absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-white" />
+    </motion.div>
+
+  </div>
+</CardContent>
             </Card>
           </motion.div>
         </div>
