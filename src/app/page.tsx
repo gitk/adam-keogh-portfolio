@@ -406,7 +406,7 @@ export default function AdamPortfolioWebsite() {
             <SectionLabel>About Adam</SectionLabel>
             <h2 className="text-4xl font-black tracking-tight md:text-5xl">Driven by engineering, motorsport and teamwork.</h2>
             <p className="mt-5 text-lg leading-8 text-zinc-400">
-              I am interested in engineering, Formula 1 and building working models. He enjoys learning about engineering in school and understanding the technology and design behind Formula 1 cars. He also plays football for Longwood AFC and regularly goes to the gym, developing teamwork, discipline, consistency and commitment outside the classroom.
+              Adam is interested in engineering and Formula 1. He enjoys learning about engineering in school and understanding the technology and design behind Formula 1 cars. Outside school, he plays football for Longwood AFC, regularly goes to the gym, enjoys gaming and spends time racing on his Formula 1 simulator. These interests help develop focus, commitment and teamwork both inside and outside the classroom.
             </p>
             <div className="mt-7 grid grid-cols-2 gap-3">
               <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
