@@ -269,7 +269,7 @@ export default function AdamPortfolioWebsite() {
 </div>
                 </div>
                 <div className="p-7">
-                  <h3 className="text-2xl font-black">Motorised Fairground Ride</h3>
+                  <h3 className="text-2xl font-black text-white">Motorised Fairground Ride</h3>
                   <p className="mt-3 text-zinc-300">
                     A working engineering model showing motion, structure and mechanical thinking. This project should be the main video-led feature of the portfolio.
                   </p>
@@ -302,9 +302,9 @@ export default function AdamPortfolioWebsite() {
   </div>
 </div>
                 <div className="p-7">
-                  <h3 className="text-2xl font-black">Homemade F1 Car Build</h3>
+                  <h3 className="text-2xl font-black text-white">Homemade F1 Car Build</h3>
                   <p className="mt-3 text-zinc-300">
-                    One of Adam’s earliest engineering builds, made from an orange juice carton, large Lego car wheels, wooden skewa small electric motor and an elastic band.
+                    One of my earliest engineering builds, made from an orange juice carton, large Lego car wheels, wooden skewa small electric motor and an elastic band.
                   </p>
                  <div className="mt-5 flex flex-wrap gap-2">
   {['OJ carton', 'Lego wheels', 'Electric motor', 'Elastic band', 'Wood skewers'].map((item) => (
@@ -406,7 +406,7 @@ export default function AdamPortfolioWebsite() {
             <SectionLabel>About Adam</SectionLabel>
             <h2 className="text-4xl font-black tracking-tight md:text-5xl">Driven by engineering, motorsport and teamwork.</h2>
             <p className="mt-5 text-lg leading-8 text-zinc-400">
-              Adam is interested in engineering, Formula 1, aerodynamics and building working models. He also plays football for Longwood AFC, developing teamwork, discipline, communication and commitment outside the classroom.
+              I am interested in engineering, Formula 1, aerodynamics and building working models. I also play football for Longwood AFC, developing teamwork, discipline, communication and commitment outside the classroom.
             </p>
             <div className="mt-7 grid grid-cols-2 gap-3">
               <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
