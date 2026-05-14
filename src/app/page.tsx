@@ -357,7 +357,8 @@ export default function AdamPortfolioWebsite() {
                         <h3 className="text-xl font-black">{cba.title}</h3>
                         <p className="mt-1 font-semibold text-red-300">{cba.subtitle}</p>
                         <p className="mt-4 text-sm leading-6 text-zinc-400">{cba.description}</p>
-                        <div className="mt-5">
+                       <div className="mt-5 flex flex-wrap gap-3">
+
   <a
     href={
       cba.title === "Science CBA"
@@ -379,6 +380,17 @@ export default function AdamPortfolioWebsite() {
     <FileText className="h-4 w-4" />
     View PDF
   </a>
+
+  {cba.title === "Science CBA" && (
+    <a
+      href="/projects/science-gallery"
+      className="inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-500"
+    >
+      <Video className="h-4 w-4" />
+      View Videos
+    </a>
+  )}
+
 </div>
                       </CardContent>
                     </Card>
