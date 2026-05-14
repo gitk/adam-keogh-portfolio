@@ -17,7 +17,6 @@ import {
   MapPin,
   Video,
   Car,
-  Users,
   Goal,
   Lightbulb,
   Rocket,
@@ -194,19 +193,36 @@ export default function AdamPortfolioWebsite() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
               I’m Adam Keogh, a student interested in engineering, motorsport and how things work. This portfolio brings together my F1-inspired CBAs, hands-on builds, experiments, videos and project work for Transition Year placement opportunities.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" className="rounded-full bg-red-600 hover:bg-red-500">
-                View Engineering Projects <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-full border-white/15 bg-white/5 text-white hover:bg-white/10">
-                Explore CBA Portfolio
-              </Button>
-            </div>
+            </p>a
+<div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
+  <Button
+    size="lg"
+    className="rounded-full bg-red-600 hover:bg-red-500"
+    asChild
+  >
+    <a href="#projects">
+      View Engineering Projects
+      <ChevronRight className="ml-2 h-4 w-4" />
+    </a>
+  </Button>
+
+  <Button
+    size="lg"
+    variant="outline"
+    className="rounded-full border-white/15 bg-white/5 text-white hover:bg-white/10"
+    asChild
+  >
+    <a href="#cbas">
+      Explore CBA Portfolio
+    </a>
+  </Button>
+
+</div>
             <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
               <Stat value="6" label="CBAs" />
               <Stat value="2" label="Major Builds" />
-              <Stat value="1" label="Clear Goal" />
+              <Stat value="1" label="Placement Goal" />
             </div>
           </motion.div>
 
@@ -230,7 +246,7 @@ export default function AdamPortfolioWebsite() {
                     </div>
                     <h2 className="text-3xl font-black">Motorised Fairground Ride</h2>
                     <p className="mt-3 text-sm leading-6 text-zinc-300">
-                      Latest 3rd Year Engineering Project, video showcase coming here with build process, movement, mechanism and design explanation.
+                      My latest engineering project, showing the build process, movement, mechanism and design thinking behind the model.
                     </p>
                   </div>
                   <motion.div
@@ -407,8 +423,8 @@ export default function AdamPortfolioWebsite() {
             <SectionLabel>About Adam</SectionLabel>
             <h2 className="text-4xl font-black tracking-tight md:text-5xl">Driven by engineering, motorsport and teamwork.</h2>
             <p className="mt-5 text-lg leading-8 text-zinc-400">
-              I am interested in engineering and Formula 1. I enjoy learning about engineering in school and understanding the technology and design behind Formula 1 cars. Outside school, I play football for Longwood AFC, regularly go to the gym, enjoy gaming and spend time racing on my Formula 1 simulator. These interests help develop focus, commitment and teamwork both inside and outside the classroom.
-            </p>
+  I am interested in engineering and Formula 1. I enjoy learning about engineering in school and understanding the technology and design behind Formula 1 cars. Outside school, I play football for Longwood AFC, regularly go to the gym, enjoy gaming and spend time racing on my Formula 1 simulator. These interests have helped me develop focus, commitment, consistency and teamwork both inside and outside the classroom.
+</p>
             <div className="mt-7 grid grid-cols-2 gap-3">
               <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
                 <Goal className="mb-3 h-7 w-7 text-green-300" />
