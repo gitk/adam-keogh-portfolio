@@ -68,29 +68,7 @@ export default function F1BuildPage() {
             />
           </motion.div>
 
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className="overflow-hidden rounded-[2rem] border border-white/10"
-          >
-            <img
-              src="/images/cardboardcar3.jpeg"
-              alt="F1 build image"
-              className="w-full object-cover transition-transform duration-700 hover:scale-105"
-            />
-          </motion.div>
-
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className="overflow-hidden rounded-[2rem] border border-white/10"
-          >
-            <img
-              src="/images/cardboardcar4.jpeg"
-              alt="F1 build image"
-              className="w-full object-cover transition-transform duration-700 hover:scale-105"
-            />
-          </motion.div>
-
-        </div>
+          
 
         {/* Video */}
         <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-black">
