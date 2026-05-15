@@ -68,7 +68,7 @@ export default function F1BuildPage() {
             />
           </motion.div>
 
-          
+          </div>
 
         {/* Video */}
         <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-black">
