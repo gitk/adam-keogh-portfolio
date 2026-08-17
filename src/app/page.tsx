@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import ContactForm from "@/components/ContactForm";
 
 const cbas = [
   {
@@ -175,9 +176,14 @@ export default function AdamPortfolioWebsite() {
             <a href="#about" className="hover:text-white">About</a>
             <a href="#placement" className="hover:text-white">TY Placement</a>
           </div>
-          <Button className="rounded-full bg-white text-black hover:bg-zinc-200">
-            Contact <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+         <Button
+  className="rounded-full bg-white text-black hover:bg-zinc-200"
+  asChild
+>
+  <a href="#contact">
+    Contact <ArrowRight className="ml-2 h-4 w-4" />
+  </a>
+</Button>
         </div>
       </nav>
 
@@ -529,18 +535,51 @@ export default function AdamPortfolioWebsite() {
               I’m interested in a TY placement where I can see how engineering, design, technology or manufacturing work in the real world. I want to learn from people who solve practical problems, build systems and improve how things work.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button size="lg" className="rounded-full bg-red-600 hover:bg-red-500">
-                <Mail className="mr-2 h-4 w-4" /> Contact About Placement
-              </Button>
+              <Button
+  size="lg"
+  className="rounded-full bg-red-600 hover:bg-red-500"
+  asChild
+>
+  <a href="#contact">
+    <Mail className="mr-2 h-4 w-4" />
+    Contact About Placement
+  </a>
+</Button>
               <Button size="lg" variant="outline" className="rounded-full border-white/15 bg-white/5 text-white hover:bg-white/10">
                 Download PDF Portfolio
               </Button>
             </div>
-            <div className="mt-8 flex items-center justify-center gap-2 text-sm text-zinc-500">
+                        <div className="mt-8 flex items-center justify-center gap-2 text-sm text-zinc-500">
               <MapPin className="h-4 w-4" /> Longwood, Co. Meath
             </div>
           </div>
         </section>
+
+        <section
+          id="contact"
+          className="border-t border-white/10 bg-white/[0.025] py-20"
+        >
+          <div className="mx-auto max-w-4xl px-5">
+            <div className="mb-10 text-center">
+              <SectionLabel>Get In Touch</SectionLabel>
+
+              <h2 className="text-4xl font-black tracking-tight md:text-5xl">
+                Contact Me
+              </h2>
+
+              <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-zinc-400">
+                If you would like to discuss a Transition Year placement,
+                engineering opportunity or one of my projects, please get in
+                touch using the form below.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/10 bg-zinc-950/70 p-6 shadow-2xl shadow-black/30 md:p-10">
+              <ContactForm />
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-white/10 px-5 py-8 text-center text-sm text-zinc-500">
